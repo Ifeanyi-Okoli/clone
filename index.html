@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--
+        <script src="https://cdn.tailwindcss.com"></script>
+    -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #000;
+        color: #fff;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+
+      .logo {
+        width: 150px;
+        cursor: pointer;
+      }
+
+      nav button {
+        background-color: #db0001;
+        color: #fff;
+        border: none;
+        outline: 0;
+        padding: 7px 20px;
+        border-radius: 4px;
+        font-size: 12px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      .language-btn {
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 7px 20px;
+      }
+
+      .language-btn img {
+        margin-left: 10px;
+        width: 10px;
+      }
+
+      .email-setup {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      .header-content h1 {
+        font-size: 60px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        line-height: 70px;
+        max-width: 650px;
+      }
+      .header-content h3 {
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .email-signup {
+        display: flex;
+        background: #fff;
+        align-items: center;
+        margin-top: 30px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      .email-signup input {
+        border: none;
+        outline: none;
+        margin-left: 20px;
+        flex: 1;
+      }
+
+      .email-signup button {
+        background: #db0001;
+        color: #fff;
+        border: none;
+        outline: none;
+        padding: 15px 30px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+/* Features*/
+      .features{
+        font-size: 22px;
+        padding: 50px 12%;
+      }
+
+        .features h2{
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .features p{
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .text-col{
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+
+        .img-col{
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+
+        .img-col img{
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+
+        .row{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 50px 0; 
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <img src="./images/logo.png" alt="Netflix logo" class="logo" />
+        <div>
+          <button class="language-btn">
+            English <img src="./images/down-icon.png" alt="arrow icon" />
+          </button>
+          <button>Sign In</button>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <h3>Watch anywhere. Cancel anytime.</h3>
+
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <form class="email-signup">
+          <input type="email" placeholder="Email address" required />
+          <button type="submit">Get Started</button>
+        </form>
+      </div>
+    </div>
+    <!-- end of header -->
+    <div class="features">
+      <div class="row">
+        <div class="text-col">
+          <h2>Enjoy on your TV.</h2>
+          <p>
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+            players, and more.
+          </p>
+        </div>
+        <div class="img-col">
+          <img src="./images/feature-1.png" alt="tv" />
+      </div>
+    </div>
+  </body>
+</html>
